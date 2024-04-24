@@ -1,13 +1,25 @@
 # Junior_SOC_Analyst
-As per Microsoft, the hash value is a numeric value of a fixed length that uniquely identifies data. A hash value is the result of a hashing algorithm. The following are some of the most common hashing algorithms: 
+These are the inportant tools and topics that i covered in the SOC lv 1 career path
 
-MD5 (Message Digest, defined by RFC 1321) - was designed by Ron Rivest in 1992 and is a widely used cryptographic hash function with a 128-bit hash value. MD5 hashes are NOT considered cryptographically secure. In 2011, the IETF published RFC 6151, "Updated Security Considerations for the MD5 Message-Digest and the HMAC-MD5 Algorithms," which mentioned a number of attacks against MD5 hashes, including the hash collision.
-SHA-1 (Secure Hash Algorithm 1, defined by RFC 3174) - was invented by United States National Security Agency in 1995. When data is fed to SHA-1 Hashing Algorithm, SHA-1 takes an input and produces a 160-bit hash value string as a 40 digit hexadecimal number. NIST deprecated the use of SHA-1 in 2011 and banned its use for digital signatures at the end of 2013 based on it being susceptible to brute-force attacks. Instead, NIST recommends migrating from SHA-1 to stronger hash algorithms in the SHA-2 and SHA-3 families.
-The SHA-2 (Secure Hash Algorithm 2) - SHA-2 Hashing Algorithm was designed by The National Institute of Standards and Technology (NIST) and the National Security Agency (NSA) in 2001 to replace SHA-1. SHA-2 has many variants, and arguably the most common is SHA-256. The SHA-256 algorithm returns a hash value of 256-bits as a 64 digit hexadecimal number.
-A hash is not considered to be cryptographically secure if two files have the same hash value or digest.
+ - Tshark for network packet filterring and sniffing
+ - Yara Rules for antivirus signarures
+  - MalwareBazaar and Malshare are good resources to provide you with access to the samples, malicious feeds, and YARA results - these all can be very helpful when it comes to threat hunting and incident response. 
 
-Security professionals usually use the hash values to gain insight into a specific malware sample, a malicious or a suspicious file, and as a way to uniquely identify and reference the malicious artifact.
+  https://bazaar.abuse.ch/ - The Malware Marketplace 1
 
-You've probably read ransomware reports in the past, where security researchers would provide the hashes related to the malicious or suspicious files used at the end of the report. You can check out The DFIR Report and FireEye Threat Research Blogs if you’re interested in seeing an example.
+  https://malshare.com/ - The Malware Marketplace 2
 
-Various online tools can be used to do hash lookups like VirusTotal and Metadefender Cloud - OPSWAT.
+  https://tdm.socprime.com/signup - SOC Prime PLatform
+
+  https://attack.mitre.org/ - Threat Mitigation Protocols
+
+ - Chimera is a China-based hacking group that has been active since 2018. What is the name of the commercial, remote access tool they use for C2 beacons and data exfiltration?
+
+
+ # Exercise
+ Now you have learned the concept of the Pyramid of Pain. Maybe it is time to apply this in practice. Please, navigate to the Static Site to perform the exercise. 
+
+You can pick any APT (Advanced Persistent Threat Groups) as another exercise. A good place to look at would be https://www.mandiant.com/resources/insights/apt-groups. When you have determined the APT Group you want to research - find their indicators and ask yourself: " What can I do or what detection rules and approach can I create to detect the adversary's activity?", and "Where does this activity or detection fall on the Pyramid of Pain?”
+
+
+As David Blanco states, "the amount of pain you cause an adversary depends on the types of indicators you are able to make use of". 
