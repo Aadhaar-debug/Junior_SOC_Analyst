@@ -23,3 +23,44 @@ You can pick any APT (Advanced Persistent Threat Groups) as another exercise. A 
 
 
 As David Blanco states, "the amount of pain you cause an adversary depends on the types of indicators you are able to make use of". 
+
+ - Cyber Kill Chain
+ - Unifed Kill Chain
+ - Diamond Model
+ - mitre
+
+
+ # Cyber Threat Intelligence
+ - Cyber threat Intel
+ - YARA
+ - Open CTI
+ - MISP
+
+ # Network Sec and traffic Analysis
+ - Snort
+ - Network Miner
+ - ZEEK
+ - BRIM
+ - Wireshark
+
+ # Endpoint Security
+ - SYS Internals
+ - Windows Event Logs
+ - sysmon
+ - OSquery
+ - Wazuh
+
+ # Security Event and Event MAnagement
+ - ELK 101
+ - ItsyBitsy
+ - Splunk
+ - IBM Qradar
+ - Benign
+
+ # Security Forensics and Incidence response
+ - DFIR
+ - Autopsy
+ - Redline
+ - Kape
+ - Velicoraptor
+ - the hive project
