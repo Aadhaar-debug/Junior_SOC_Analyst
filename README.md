@@ -65,3 +65,15 @@ As David Blanco states, "the amount of pain you cause an adversary depends on th
  - Kape
  - Velicoraptor
  - the hive project
+
+# Incidence handling Process
+ Module Sections
+ Incident Handling
+ Cyber Kill Chain
+ Incident Handling Process Overview
+ Preparation Stage (Part 1)
+ Preparation Stage (Part 2)
+ Detection & Analysis Stage (Part 1)
+ Detection & Analysis Stage (Part 2)
+ Containment, Eradication, & Recovery Stage
+ Post-Incident Activity Stage
