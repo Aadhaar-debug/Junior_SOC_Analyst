@@ -38,6 +38,7 @@ As David Blanco states, "the amount of pain you cause an adversary depends on th
 
  # Network Sec and traffic Analysis
  - Snort
+ - suricata
  - Network Miner
  - ZEEK
  - BRIM
