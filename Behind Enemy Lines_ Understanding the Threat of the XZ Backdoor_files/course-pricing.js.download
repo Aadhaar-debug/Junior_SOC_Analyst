@@ -1,0 +1,74 @@
+const arrPricingInfo = [
+  {
+    div: 'lf-cur-price',
+    value: '$699'
+  },
+  {
+    div: 'lf-cur-price-old',
+    value: '$799'
+  },
+  {
+    div: 'lf-cur-price-notice',
+    value: 'Introductory pricing ends 6/30'
+  }
+];
+const arrPricingInfoNew = [
+  {
+    div: 'lf-cur-price',
+    value: '$799'
+  },
+  {
+    div: 'lf-cur-price-old',
+    value: 'hide'
+  },
+  {
+    div: 'lf-cur-price-notice',
+    value: 'hide'
+  }
+];
+
+//price-notice-style-one
+
+const priceChangeDate = new Date('2022-07-01');
+const today = new Date();
+
+const dateInPast = (firstDate, secondDate) => {
+  if (firstDate.setHours(0, 0, 0, 0) <= secondDate.setHours(0, 0, 0, 0)) {
+    return true;
+  }
+  return false;
+};
+
+const swapPriceValues = (force = false) => {
+  //check date and pass proper stuff
+  let isPastDate;
+
+  if (typeof force !== 'boolean') {
+    return;
+  }
+
+  if (force) {
+    //for testing
+    isPastDate = true;
+  } else {
+    isPastDate = dateInPast(priceChangeDate, today);
+  }
+
+  const arrPricing = isPastDate ? arrPricingInfoNew : arrPricingInfo;
+
+  arrPricing.forEach(info => {
+    const domElements = document.querySelectorAll(`.${info.div}`);
+    if (domElements.length) {
+      domElements.forEach(el => {
+        if (info.value === 'hide') {
+          el.style.display = 'none';
+        } else {
+          //if not hiding, swap it
+          el.innerHTML = info.value;
+        }
+      });
+    }
+  });
+};
+
+window.onload = swapPriceValues();
